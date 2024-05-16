@@ -20,7 +20,7 @@
   --surface-color: rgba(0, 0, 0, 0.1);
   --stroke-color-hover: black;
   --surface-color-hover: rgba(0, 0, 0, 0.05);
-  --highlight-color: rgba(0, 0, 0, 0.2);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./images/sun.svg);
 }
 body {
@@ -65,6 +65,7 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-out 0.2s;
 }
 #switch span {
   display: block;
@@ -77,9 +78,10 @@ body * {
   border-radius: 9999px;
 }
 .light #switch button{
-  right: 0;
-  left: initial;
-  
+  animation: slide-in 0.2s forwards; 
+}
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 ul {
   text-decoration: dashed;
@@ -136,5 +138,21 @@ footer {
   }
   .light {
     --bg: url(images/bg_desktop_light.jpg)
+  }
+}
+@keyframes slide-in {
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
   }
 }
