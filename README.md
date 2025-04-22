@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O HTMLproject é um agregador de links que pode ser usado como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://github.com/FelipeMacedo10/HTMLproject)
+- [Acesse o projeto finalizado, online](https://felipemacedo10.github.io/HTMLproject/)
 
 ## Layout
 
